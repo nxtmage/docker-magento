@@ -1,5 +1,4 @@
-    <h1 align="center">nxtmage/docker-magento</h1>
-
+ <h1 align="center">nxtmage/docker-magento</h1>
     <div align="center">
       <p>Docker Configuration for Magento 2 and Mage-OS</p>
       <img src="https://img.shields.io/badge/magento-2.X-brightgreen.svg?logo=magento&longCache=true" alt="Supported Magento Versions" />
@@ -12,9 +11,7 @@
       <img src="https://img.shields.io/badge/apple%20silicon%20support-yes-brightgreen" alt="Apple Silicon Support" />
       <a href="https://opensource.org/licenses/MIT" target="_blank"><img src="https://img.shields.io/badge/license-MIT-blue.svg" /></a>
     </div>
-
     ## Table of Contents
-
     - [Docker Hub](#docker-hub)
     - [Usage](#usage)
     - [Prerequisites](#prerequisites)
@@ -45,13 +42,8 @@
       - [PHP-SPX](#php-spx)
     - [Troubleshooting](#troubleshooting)
     - [Credits & License](#credits--license)
-
-    ---
-
     ## Docker Hub
-
     View Dockerfiles for the latest tags:
-
     - [markoshust/magento-nginx (Docker Hub)](https://hub.docker.com/r/markoshust/magento-nginx/)
       - [`1.18`, `1.18-8`](images/nginx/1.18)
       - [`1.22`, `1.22-0`](images/nginx/1.22)
@@ -86,19 +78,12 @@
       - [`4.2`, `4.2-0`](images/rabbitmq/4.2)
     - [markoshust/ssh (Docker Hub)](https://hub.docker.com/r/markoshust/magento-ssh/)
       - [`latest`](images/ssh)
-
     ---
-
     ## Usage
-
     This configuration is intended to be used as a Docker-based development environment for Magento 2 and Mage-OS.
-
     Folders:
     - `images`: Docker images for nginx and php
     - `compose`: Sample setups with Docker Compose
-
-    ---
-
     ## Prerequisites
 
     - Docker Desktop or OrbStack running with at least **6GB–8GB of RAM** allocated, a multi-core CPU, and SSD storage.
@@ -537,3 +522,4 @@
   Originally created by Mark Shust https://github.com/markshust. Maintained and adapted by nxtmage https://github.com/nxtmage/docker-magento.
 
   Released under the MIT License https://opensource.org/licenses/MIT.
+](https://github.com/nxtmage/docker-magento)
