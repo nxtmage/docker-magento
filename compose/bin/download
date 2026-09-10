@@ -46,7 +46,9 @@ if [ $? != 0 ]; then
   echo -e "${BLUE}Please check the installation guide at ${YELLOW}https://github.com/markshust/docker-magento#install-fails-because-project-directory-is-not-
 empty${BLUE} for troubleshooting.${NC}"
   exit 1
-else
-  bin/clinotty [ ! -f "./var/composer_home/auth.json" ] && bin/clinotty mkdir -p ./var/composer_home && bin/clinotty cp /var/www/.composer/auth.json .
-/var/composer_home/auth.json
-fi
+  else
+    if bin/clinotty [ -f "/var/www/.composer/auth.json" ] && bin/clinotty [ ! -f "./var/composer_home/auth.json" ]; then
+      bin/clinotty mkdir -p ./var/composer_home
+      bin/clinotty cp /var/www/.composer/auth.json ./var/composer_home/auth.json
+    fi
+  fi
